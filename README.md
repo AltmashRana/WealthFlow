@@ -10,6 +10,13 @@ WealthFlow is a straightforward financial tool designed to help you project your
 * **Alternative Benchmarks:** Shows your projected total in USD and Gold equivalents based on current rates.
 * **Scenario Management:** Save your current inputs to your browser's local storage so you can return to them later.
 
+## Technical Details
+
+The tool is built as a single-file application using standard web technologies:
+
+* **HTML5/CSS3**: Handles the layout and responsive design.
+* **Vanilla JavaScript**: Manages the calculation logic and DOM updates without any external dependencies or libraries.
+
 ## How the Calculations Work
 
 The tool uses monthly compounding logic. It calculates a weighted average return based on your asset split. For example, if you allocate 40% to a fund with a 10% return and leave the rest unallocated, the tool applies a weighted return to the total balance. Every month, it adds your investment contribution and applies the monthly growth rate. Every year, it increases your salary and investment amount by your specified raise percentage.
